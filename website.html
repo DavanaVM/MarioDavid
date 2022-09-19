@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+	Beispiel für eine responsive Webseite unter Verwendung des Flexbox-Modells
+	Autor: BFS-Lehrer                  erstellt am: 05.07.2018
+	letzte Änderung: 19.09.2022
+-->
+<html lang="de">
+<head>
+    <meta name="robots" content="noindex">
+	<meta charset="utf-8" />
+	<title>Pretty Simple Responsive Layout</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="style.css">
+</head>
+	<body>
+		<div class="flex">
+		<header class="topline"><div id="topline"></div></header>
+		<main>
+			<div class="flex">
+				<a href="" class="menu">Test1</a>
+				<a href="" class="menu">Test2</a>
+				<a href="" class="menu">Test3</a>
+				<a href="" class="menu">Test4</a>
+			</div>
+		</main>
+		<footer>
+
+		</footer>
+	</div>
+		<script>
+			/* JavaScript-Code zum ermitteln der aktuellen Seitenbreite und anzeigen dieser im Container 'topline' */
+			if (document.getElementById('topline')) {
+				window.onload = window.onresize = function (evt) {
+					var width = window.innerWidth ||  (window.document.documentElement.clientWidth || window.document.body.clientWidth);
+					var height = window.innerHeight || (window.document.documentElement.clientHeight || window.document.body.clientHeight);
+					document.getElementById('topline').innerHTML = '<p>' + width + '</p>'
+				}
+			}
+		</script>
+	</body>
+</html>

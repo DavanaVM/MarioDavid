@@ -1,0 +1,60 @@
+/* Kleine Monitore (Standard) */
+html { background-color: rgb((165, 199, 183)2, 122) }
+body { margin: 0; padding: 0; color: rgb(79, 79, 79); font-size: 1.2em; font-family: Helvetica, sans-serif;}
+img { width: 100%; height: auto; }
+.reframe { max-width: 96%; margin: 0 auto; }
+#topline { background: black; color: white; }
+#topline p { margin: 0; padding:0 0 20px 0; font-size: 1.6em; text-align: center; line-height: 100%; }
+
+ul#mainmenu { 
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-shrink: 1;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack:justify;
+    justify-content: space-between;
+    margin-left: 0; 
+    padding-left: 0; 
+    list-style-type: none}
+
+ul#mainmenu li { 
+   position: relative;
+   width: 48%;
+   font-size:0.92em;
+   background: black; 
+   margin-right: 1px; 
+   margin-bottom:1ex }
+
+ul#mainmenu li a { 
+   display:block; padding: 10px; text-decoration: none; color: white; }
+   
+ul#mainmenu ul li { 
+   background: none; margin-top: 0; display: block; margin-bottom: 1px; }
+
+ul#mainmenu li:hover ul { 
+   display: block; }
+   
+ul#mainmenu ul { 
+   background: rgba(0,0,0,0.8); 
+   position: absolute; right:0; padding-left: 0; width: 200%; 
+   display: none; 
+   z-index:100; }
+   
+#sidebar ul { list-style-type:none; padding-left: 1ex }
+#sidebar ul ul { margin-top: 1em }
+#sidebar li { margin-bottom: 1ex; border-bottom: 1px dotted gainsboro}
+#sidebar li li { border-bottom:none}
+
+#home { background: salmon; color:white;margin-top:20px; padding: 10px; text-align: center; font-weight: 800; cursor: pointer; }
+#home a {
+color: #000;
+text-decoration: none;
+}
+footer { background: black; height: 40px; color: white; padding-top:10px;}
+.inner { height: 400px; }
+.post1 { height: 100px; }
+

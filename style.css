@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+}
+.topline{
+text-align: center;
+background-color: black;
+color:white;
+padding: 0 0 20px 0;
+width: 100rem;
+flex-grow: 1;
+font-size: 1.6em; 
+}
+
+.flex {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+min-width: 100%;
+}
+
+.flex>div {
+flex: 0 0 100%;
+}
+
+.flex>div:first-child {
+flex: 0 1 100%;
+}
+
+header {
+    width: 100%;
+    justify-content: center;
+}

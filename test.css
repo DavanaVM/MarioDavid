@@ -1,5 +1,5 @@
 html {
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
     font-size: 14px;
 }
@@ -47,11 +47,6 @@ html {
 .bilddiv {
     flex-basis: 30%;
     justify-content: center;
-}
-
-h3 {
-    color: #555555;
-    font-size: 1px;
 }
 
 .text h3 {
@@ -213,6 +208,10 @@ a {
     transform: rotate(-405deg);
   }
 
+  .rowDesktop, .columnDesktop {
+    display: none;
+  }
+
   /* Aktivierung des Burgermenüs bei kleinen Bildschirmen */
   @media (max-width: 700px) {
     .menu-button-container {
@@ -277,7 +276,6 @@ a {
         display:flex;
         flex-direction: row;
         justify-content: space-between;
-        background-color: beige;
         margin-left: 160px; 
         padding: 0px 10px;
       }
@@ -289,35 +287,46 @@ a {
         color: #818181;
         display: block;
       }
-      
 
-      .bild {
-        display: flex;
-        flex-basis: 32%;
-        justify-content: space-between;
+    .row, .column {
+      display: none;
     }
-    
-    .bilddiv {
+
+    .rowDesktop {
       display: flex;
-        flex-basis: 30%;
-        justify-content: space-between;
-    }
-    
-    .samesize{
-      width:300px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
     }
 
-    .top-nav{
-      background-color: beige;
+    .columnDesktop {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
     }
-  
+
+    h3 {
+        font-size: 20px;
+    }
   }
 
   @media screen and (min-width: 700px) and (max-width: 1279px) {
-    .menu{background-color: black; text-decoration: none;}
+    .row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+    }
 
-    .top-nav{
-      display:flex;
-      justify-content: space-around;
+    .column {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+    }
+
+    h3 {
+        font-size: 20px;
     }
   }

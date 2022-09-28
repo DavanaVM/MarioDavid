@@ -10,107 +10,181 @@
 	<meta charset="utf-8" />
 	<title>Pretty Simple Responsive Layout</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="test.css">
 </head>
 	<body>
-		<div class="flex">
-		<header class="topline"><div id="topline"></div></header>
+		<header class="topline">
+			<div id="topline"></div>
+			<div class="break"></div>
+		</header>
+	<div class="main">
 		<div class="break"></div>
 		<main class="flex">
-			<div class="flex wholemenu">
-				<a href="" class="menu">Zurück zum Artikel</a>
-				<a href="" class="menu">Mittagssonne</a>
-				<a href="" class="menu">Mitternacht</a>
-				<a href="" class="menu">Sommerlicht</a>
-			</div>
-			<!-- Start Motorrad -->
-			<div class="flex bilddiv">
-				<img class="bild" src="BMW-R1100R.jpg" alt="Motorrad">
-			</div>
-			<div class="flex text">
-				<h3 class="flexh3"> Im Strom der Zeit </h3> 
-				<p> Auch mit 25 Jahren und über 100.000km immer noch topqualität, einwandfreie Fahreigenschaften sowie TÜV ohne Mängel!</p>
-			</div>
-			<!-- Ende Motorrad -->
 
-			<!-- Start Alien -->
-			<div class="flex text">
-				<h3 class="flexh3"> Aliens über Bonn gesichtet </h3> 
+			<div class="">
+				<section class="top-nav">
+					<input id="menu-toggle" type="checkbox" title="Menu"/>
+					<label class='menu-button-container' for="menu-toggle">
+					  <div class='menu-button'></div>
+					</label>
+					<ul class="menu">
+					  <li><a href="">Zurück zum Artikel</a></li>
+					  <li><a href="">Mittagssonne</a></li>
+					  <li><a href="">Mitternacht</a></li>
+					  <li><a href="">Sommerlicht</a></li>
+					</ul>
+				  </section>
 			</div>
-			<div class="flex bilddiv">
-				<img class="bild" src="aliensbonn.jpg" alt="Motorrad">
-			</div>
-			<div class="flex text">
-				<p> Aktuelle Aufnahme eines gesichteten Ufo über Bonn.</p>
-			</div>
-			<!-- Ende Alien -->
 
-			<!-- Start Mond -->
-			<div class="flex text">
-				<h3 class="flexh3"> Urlaub auf dem Mond des Titan </h3> 
+		<!-- Tablet -->
+		<!-- Start Abschnitteins -->
+		<div class="row">
+			<div class="column">
+				<h3> Im Strom der Zeit </h3>
+			</div> 
+			<div class="column">
+				<h3> Aliens über Bonn gesichtet </h3>
 			</div>
-			<div class="flex bilddiv">
-				<img class="bild" src="mond-titan.jpg" alt="Motorrad">
-			</div>
-			<div class="flex text">
-				<p> Der Titanmond hat eine Atmosphäre. Zum Urlaub geeignet für alle, die Unwetter mögen. </p>
-			</div>
-			<!-- Ende Mond -->
+		</div>
+		<div class="row" style="color: gray; margin-top: 20px;">            
+			<div class="column">
+				<img src="BMW-R1100R.jpg" alt="Motorrad">
+			</div> 
+		<div class="column">
+			<img class="" src="aliensbonn.jpg" alt="Ufo">
+		</div>
+        </div>
+        <div class="row">
+			<div class="column">
+                <p> Auch mit 25 Jahren und über 100.000km immer noch topqualität, einwandfreie Fahreigenschaften sowie TÜV ohne Mängel!</p>
+            </div> 
+            <div class="column">
+                <p> Aktuelle Aufnahme eines gesichteten Ufo über Bonn.</p>
+            </div>
+        </div>
+        <!-- Ende Abschnitteins -->
+        <!-- Start Abschnittzwei -->
+        <div class="row">
+			<div class="column">
+                <h3> Urlaub auf dem Mond des Titan </h3> 
+            </div> 
+            <div class="column">
+                <h3> Zwischen den Zeilen </h3> 
+            </div>
+        </div>
+        <div class="row">
+			<div class="column">
+                <img class="bild" src="mond-titan.jpg" alt="Motorrad">
+            </div> 
+            <div class="column">
+                <img class="bild" src="zwischenzeilen.jpg" alt="Motorrad">
+            </div>
+        </div>
+        <div class="row">
+			<div class="column">
+                <p> Der Titanmond hat eine Atmosphäre. Zum Urlaub geeignet für alle, die Unwetter mögen. </p>
+            </div> 
+            <div class="column">
+                <p> Wer zwischen den Zeilen lesen kann erfährt mehr als der Buchstabenleser. </p>
+            </div>
+        </div>
+        <!-- Ende Abschnittzwei -->
+        <!-- Start Abschnittdrei -->
+        <div class="row">
+			<div class="column">
+                <h3 class=""> Osterspaziergang </h3> 
+            </div> 
+        </div>
+        <div class="row">
+			<div class="column">
+                <img class="bild" src="Osterspaziergang.jpg" alt="Motorrad">
+            </div> 
+        </div>
+        <div class="row">
+			<div class="column">
+                <p> Immer spannend - Vielleicht haben andere Ihre Nester nicht gefunden. </p>
+            </div> 
+        </div>
+        <!-- Ende Abschnittdrei -->
+		<!-- Tablet -->
 
-			<!-- Start Zeilen -->
-			<div class="flex text">
-				<h3 class="flexh3"> Zwischen den Zeilen </h3> 
+		<!-- Desktop -->
+		<!-- Start Abschnitteins -->
+		<div class="rowDesktop">
+			<div class="columnDesktop">
+				<h3> Im Strom der Zeit </h3>
+			</div> 
+			<div class="columnDesktop">
+				<h3> Aliens über Bonn gesichtet </h3>
 			</div>
-			<div class="flex bilddiv">
-				<img class="bild" src="zwischenzeilen.jpg" alt="Motorrad">
-			</div>
-			<div class="flex text">
-				<p> Wer zwischen den Zeilen lesen kann erfährt mehr als der Buchstabenleser. </p>
-			</div>
-			<!-- Ende Zeilen -->
+			<div class="columnDesktop">
+                <h3> Urlaub auf dem Mond des Titan </h3> 
+            </div> 
+		</div>
+		<div class="rowDesktop" style="color: gray; margin-top: 20px;">            
+			<div class="columnDesktop">
+				<img src="BMW-R1100R.jpg" alt="Motorrad">
+			</div> 
+		<div class="columnDesktop">
+			<img class="" src="aliensbonn.jpg" alt="Ufo">
+		</div>
+		<div class="columnDesktop">
+			<img class="bild" src="zwischenzeilen.jpg" alt="Motorrad">
+		</div>
+        </div>
+        <div class="rowDesktop">
+			<div class="columnDesktop">
+                <p> Auch mit 25 Jahren und über 100.000km immer noch topqualität, einwandfreie Fahreigenschaften sowie TÜV ohne Mängel!</p>
+            </div> 
+            <div class="columnDesktop">
+                <p> Aktuelle Aufnahme eines gesichteten Ufo über Bonn.</p>
+            </div>
+			<div class="columnDesktop">
+                <p> Wer zwischen den Zeilen lesen kann erfährt mehr als der Buchstabenleser. </p>
+            </div>
+        </div>
+        <!-- Ende Abschnitteins -->
+        <!-- Start Abschnittzwei -->
+        <div class="rowDesktop">
+            <div class="columnDesktop">
+                <h3> Zwischen den Zeilen </h3> 
+            </div>
+			<div class="columnDesktop">
+                <h3 class=""> Osterspaziergang </h3> 
+            </div> 
+        </div>
+        <div class="rowDesktop">
+			<div class="columnDesktop">
+                <img class="bild" src="mond-titan.jpg" alt="Motorrad">
+            </div> 
+			<div class="columnDesktop">
+                <img class="bild" src="Osterspaziergang.jpg" alt="Motorrad">
+            </div> 
+        </div>
+        <div class="rowDesktop">
+			<div class="columnDesktop">
+                <p> Der Titanmond hat eine Atmosphäre. Zum Urlaub geeignet für alle, die Unwetter mögen. </p>
+            </div> 
+			<div class="columnDesktop">
+                <p> Immer spannend - Vielleicht haben andere Ihre Nester nicht gefunden. </p>
+            </div> 
+        </div>
+		<!-- Desktop -->
 
-			<!-- Start Ostern -->
-			<div class="flex text">
-				<h3 class="flexh3"> Osterspaziergang </h3> 
-			</div>
-			<div class="flex bilddiv">
-				<img class="bild" src="Osterspaziergang.jpg" alt="Motorrad">
-			</div>
-			<div class="flex text">
-				<p> Immer spannend - Vielleicht haben andere Ihre Nester nicht gefunden. </p>
-			</div>
-			<!-- Ende Ostern -->
-			<!-- Anfang der Sidebar -->
-			<aside>
-				<div id="sidebar" class="sidebar">
-					<div class="inner">
-						<h3>Die Sidebar – der Standard für große Monitore</h3>
-						<ul>
-							<li>Menu Item 1</li> <hr>
-							<li>Menu Item 2 
-								<ul>
-									<li>Sub Item 1</li>
-									<li>Sub Item 2</li>
-									<li>Sub Item 3</li>
-								</ul> <hr>
-							</li>
-							<li>Menu Item 3</li> <hr>
-							<li>Menu Item 4</li> <hr>
-						</ul>
-						<div class="fuelltext">
-							<h3>Cras mi risus</h3>
-							<p>Cras mi risus, iaculis non tincidunt in, tristique in turpis. In malesuada dapibus varius. Aliquam sit amet sem eu est laoreet mollis. </p>
-							<h3>Nulla varius arcu non ligula</h3>
-							<p>Nulla varius arcu non ligula auctor vehicula. Nunc nisi nulla, dictum eget pellentesque sit amet, volutpat id diam. Donec elementum tempor nibh, nec pretium erat ultricies quis. </p>
-						</div>
-					</div>
-				</div>
-			</aside>
-			<!-- Ende der Sidebar -->
 
+
+			<!-- Anfang des Fülltexts -->
+
+			<div class="text">
+				<h3>Cras mi risus</h3>
+				<p>Cras mi risus, iaculis non tincidunt in, tristique in turpis. In malesuada dapibus varius. Aliquam sit amet sem eu est laoreet mollis. </p>
+				<h3>Nulla varius arcu non ligula</h3>
+				<p>Nulla varius arcu non ligula auctor vehicula. Nunc nisi nulla, dictum eget pellentesque sit amet, volutpat id diam. Donec elementum tempor nibh, nec pretium erat ultricies quis. </p>
+			</div>
+			<!-- Ende der Fülltexts -->
 		</main>
 		<div class="home">
-			<a class="up" href="#topline">Nach oben!</a>
+			<div class="up"><a href="#topline">Nach oben!</a></div>
 			<p class="end">Und ein letzter Satz für den Footer!</p>
 		</div>
 	</div>
@@ -120,7 +194,8 @@
 				window.onload = window.onresize = function (evt) {
 					var width = window.innerWidth ||  (window.document.documentElement.clientWidth || window.document.body.clientWidth);
 					var height = window.innerHeight || (window.document.documentElement.clientHeight || window.document.body.clientHeight);
-					document.getElementById('topline').innerHTML = '<p>' + width + '</p>'
+					document.getElementById('topline').innerHTML = '<p>' + width + '</p>';
+					document.getElementsByClassName('topline').style.width = document.innerWidth;
 				}
 			}
 		</script>
